@@ -29,11 +29,11 @@ console.log(error);
 
   return (<>
     <div >
-      <h1>news app</h1>
-
-     <input type='text' onChange={(e)=>{
+      
+<span>News app </span>
+     <input type='text' placeholder='Search here' onChange={(e)=>{
 setsearchquery(e.target.value);
-     }}/>
+     }} className='input-box'/>
 
 <div className='display'>
       {
