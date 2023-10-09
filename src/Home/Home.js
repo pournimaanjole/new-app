@@ -8,14 +8,11 @@ const Home = () => {
   const [searchquery,setsearchquery] = useState('pune');
 
   const loadnews = async () => {
-    try{
+ 
     const response = await axios.get(`https://newsapi.org/v2/everything?q= ${searchquery}&from=2023-10-02&to=2026f25a469812d44c890762aa089e65aa83-10-02&sortBy=popularity&apiKey=${process.env.REACT_APP_API_KEY}`)
     console.log(response.data.articles);
     setdata(response.data.articles)
-    }
-    catch(error){
-console.log(error);
-    }
+    
   }
 
 
